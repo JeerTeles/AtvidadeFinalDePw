@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jornal Esportivo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/css/uikit.min.css" />
+</head>
+
+<body>
+    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Entrar</button>
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <form>
+
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                        <input class="uk-input" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                        <input class="uk-input" type="text">
+                    </div>
+                </div>
+                <button class="uk-button uk-button-secondary">Entrar</button>
+            </form>
+
+        </div>
+    </div>
+
+    <button class="uk-button uk-button-default uk-margin-small-right uk-button-primary" type="button"
+        uk-toggle="target: #offcanvas-usage">Menu</button>
+
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul>
+                <li>Editorias</li>
+                <li>Regiões</li>
+                <li>Telejornais</li>
+                <li>Globonews</li>
+                <li>Blogs e Colunas</li>
+                <li>Serviços</li>
+                <li>Vídeos</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <button class="uk-button uk-button-default uk-margin-small-right" type="button"
+        uk-toggle="target: #offcanvas-usage1">Futebol</button>
+
+    <div id="offcanvas-usage1" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul>
+                <li>Tabela time serie A</li>
+                <li>Campeonatos</li>
+                <li>Brasileirão</li>
+                <li>Campeonato Europeu</li>
+                <li>Campeonato Frânces</li>
+                <li>Campeonato Inglês</li>
+                <li>Campeaonato Espanhol</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <button class="uk-button uk-button-default uk-margin-small-right uk-button-secondary" type="button"
+        uk-toggle="target: #offcanvas-usage2">Vôlei</button>
+
+    <div id="offcanvas-usage2" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul>
+                <li>Tabela time serie A</li>
+                <li>Campeonatos</li>
+                <li>Times Masculinos</li>
+                <li>Times Femininos</li>
+                <li>Principais Jogadores</li>
+                <li>Times com mais titulos</li>
+                <li>Técnicos dos principais times</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <button class="uk-button uk-button-default uk-margin-small-right uk-button-danger" type="button"
+        uk-toggle="target: #offcanvas-usage3">Formula I</button>
+
+    <div id="offcanvas-usage3" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul>
+                <li>Campeonatos</li>
+                <li>Principais Carros</li>
+                <li>Principais corredores</li>
+                <li>Pistas dos campeaonatos</li>
+                <li>Investidores</li>
+                <li>Carros</li>
+                <li>Equipes Técnicas</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="uk-container-expand uk-section-primary uk-margin-top">
+        <h1 class="uk-heading-small uk-text-center">Jornal Esportivo</h1>
+        <h4 class="uk-text-center uk-text-muted">"Onde o mundo dos esportes se encontram"</h4>
+    </div>
+
+    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="img/futebolimagem.jpg" alt="futebol">
+                <h3>Neymar questiona aposentadoria</h3>
+                <p>O jogador questiona aposentadoria e comenta sobre<a href="futebol.html" target="_blank" rel="next"> Saiba mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="img/voleifeminino.webp" alt="volei Jogadora">
+                <h3>Natalia anuncia aposentadoria</h3>
+                <p>Natalia anunciou sua aposentadoria da seleção brasileira<a href="volei.html" target="_blank" rel="next"> Saiba mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="img/formulai.jpg" alt="carro formula i">
+                <h3>Hamilton eliminado no Q1 do Gp</h3>
+                <p>Hamilton é eliminado no Q1 do GP da Arábia Saudita; Mick Schumacher bate forte. <a href="FormulaI.html" target="_blank" rel="next">Saiba mais</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="img/basqueteimagenss.jpg" alt="basquete">
+                <h3>Argentina avança para final após vitoria contra França</h3>
+                <p>Com o show de Scale a Argentina vence os francês e garante sua vaga na final. <a href="basquete.html" target="_blank" rel="next">Saiba mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="img/natação.webp" alt="nadadora">
+                <h3>Ana Marcela Cunha é campeã na Copa Europeia de Águas Abertas</h3>
+                <p>Atual campeã olímpica, brasileira é a única do país na competição e venceu a etapa.<a href="natação.html"> Saiba mais</a> </p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="img/surf.webp" alt="Surf">
+                <h3>Temporada do surfe deverá ser equilibrada até o fim</h3>
+                <p>Filipe Toledo e Italo Ferreira, se recuperam e estão de volta à briga. <a href="surf.html"> Saiba mais</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
